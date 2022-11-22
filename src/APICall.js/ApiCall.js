@@ -1,7 +1,7 @@
 import axios from "axios";
 import { notifyerror } from "../Notification/Notification";
 
-export const InvokeAPI = async (endpoint,type, body,headerParams, queryParam, urlParam) => {
+ const InvokeAPI = async (endpoint,type, body,headerParams, queryParam, urlParam) => {
     const baseURL= process.env.REACT_APP_COCKTAIL_BASE_URL
   const option = {
     method:type,
@@ -23,3 +23,4 @@ export const InvokeAPI = async (endpoint,type, body,headerParams, queryParam, ur
   // if success return value
   return response?.data ? response?.data : null; // or set initial value
 };
+export default InvokeAPI

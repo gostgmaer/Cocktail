@@ -54,7 +54,7 @@ const NavURL = [
     },
     {
       id: 4,
-      text: "About US",
+      text: "About",
       url: "About",
       icon:<FaUserCircle></FaUserCircle> ,
     }
