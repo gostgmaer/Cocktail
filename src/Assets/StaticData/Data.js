@@ -57,6 +57,11 @@ const NavURL = [
       text: "About",
       url: "About",
       icon:<FaUserCircle></FaUserCircle> ,
+    }, {
+      id: 10,
+      text: "Contact",
+      url: "contact",
+      icon:<FaPhone></FaPhone> ,
     }
     
   ];
