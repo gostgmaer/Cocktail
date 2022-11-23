@@ -5,11 +5,11 @@ import './header.scss'
 
 const Header = () => {
   return (
-    <div>
+    <React.Fragment>
       <header>
       <HeaderNavigation></HeaderNavigation>
       </header>
-    </div>
+    </React.Fragment>
   );
 };
 
