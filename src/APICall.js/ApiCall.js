@@ -2,7 +2,7 @@ import axios from "axios";
 import { notifyerror } from "../Notification/Notification";
 
  const InvokeAPI = async (endpoint,type, body,headerParams, queryParam, urlParam) => {
-    const baseURL= process.env.REACT_APP_COCKTAIL_BASE_URL
+    const baseURL='https://www.thecocktaildb.com/api/json/v1/1/'
   const option = {
     method:type,
     url:baseURL+endpoint,
