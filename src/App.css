@@ -43,3 +43,8 @@
 
   color: #6c757d!important;
 }
+
+.singleIng{
+  height: 360px !important;
+  object-fit: cover;
+}

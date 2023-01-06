@@ -35,8 +35,8 @@ const AppProvider = ({ children }) => {
       const res = await InvokeAPI(
         "search.php",
         "get",
-        "",
-        "",
+        '',
+        {},
         (param = { s: keyword }),
         ""
       );

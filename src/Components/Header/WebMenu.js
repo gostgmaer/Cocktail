@@ -52,17 +52,17 @@ const WebMenu = () => {
             </ul>
           </div>
 
-          <div class="text-end">
-            <a href="/">
-              <button type="button" class="btn btn-light text-dark me-2">
+          <div class="text-end disabled">
+            
+              <button type="button" class="btn disabled btn-light text-dark me-2">
                 Login
               </button>
-            </a>
-            <a href="/">
-              <button type="button" class="btn btn-primary">
+          
+           
+              <button type="button" class="btn disabled btn-primary">
                 Sign-up
               </button>
-            </a>
+      
           </div>
         </div>
       </div>

@@ -21,8 +21,8 @@ const SHowDetailsData = () => {
       const res = await InvokeAPI(
         "lookup.php",
         "get",
-        "",
-        "",
+        '',
+        {},
         (param = { i: id }),
         ""
       );
@@ -67,8 +67,8 @@ const SHowDetailsData = () => {
     );
   } else {
     return (
-      <div className="col-5 m-auto">
-        <div className="m-5">
+      <div className="col-7 m-auto">
+        <div className="m-2">
           <Link to="/" className="btn btn-outline-primary">
             Go Home
           </Link>
@@ -94,7 +94,7 @@ const SHowDetailsData = () => {
             <div className="card" key={idDrink}>
               <img
                 src={strDrinkThumb}
-                className="card-img-top img-thumbnail"
+                className="card-img-top singleIng img-thumbnail"
                 alt={strAlcoholic}
               />
               <div className="card-body">
@@ -105,7 +105,7 @@ const SHowDetailsData = () => {
                 <li className="list-group-item">{dateModified}</li>
                 <li className="list-group-item">{strAlcoholic}</li>
                 <li className="list-group-item">
-                  {strIngredient1}, {strIngredient2}, {strIngredient3}{" "}
+                  {strIngredient1}- {cocktail.strMeasure1}, {strIngredient2}, {strIngredient3}{" "}
                   {strIngredient4}
                 </li>
               </ul>
