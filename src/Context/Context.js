@@ -2,7 +2,7 @@ import { param } from "jquery";
 import React, { useState, useEffect, useContext } from "react";
 import InvokeAPI from "../APICall.js/ApiCall";
 
-const AppContext = React.createContext();
+const AppContext = React.createContext(null);
 
 const AppProvider = ({ children }) => {
   const [issidebarOpen, setissidebarOpen] = useState(false);
@@ -26,33 +26,29 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     apicALL();
+    console.log(cocktail);
   }, [keyword]);
 
   const apicALL = async () => {
     try {
-      // setloading(true)
+    
       setloading(true);
       const res = await InvokeAPI(
         "search.php",
         "get",
         '',
         {},
-        (param = { s: keyword }),
+         { s: keyword },
         ""
       );
-      if (res.drinks) {
-        setCocktail(res.drinks);
-      } else {
-        setCocktail([]);
-      }
-
-      setTimeout(() => {
-        setloading(false);
-      }, 100);
+    
+      setCocktail(res);
+      
     } catch (error) {
       console.log(error);
-      setloading(false);
+    
     }
+    setloading(false);
   };
 
   return (

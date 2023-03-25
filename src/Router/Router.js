@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Route, Routes } from "react-router-dom";
 import Home from '../Components/Home';
-import SHowDetailsData from '../Components/Pages/SHowDetailsData';
+import SHowDetailsData from '../Pages/SHowDetailsData';
 import { useGlobalContext } from '../Context/Context';
 import NotFound from "../Not-Found/404";
 

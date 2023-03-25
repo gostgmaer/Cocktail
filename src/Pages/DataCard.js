@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../Context/Context";
-import Loading from "../../Notification/Loading";
+import { useGlobalContext } from "../Context/Context";
+import Loading from "../Notification/Loading";
 // import { Audio } from  'react-loader-spinner'
 // import 'react-loader-spinner/dist/loader/Circles'
 import { Audio } from "react-loader-spinner";
